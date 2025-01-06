@@ -1,0 +1,9 @@
+h2 {
+  text-align: center;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 150px;
+}

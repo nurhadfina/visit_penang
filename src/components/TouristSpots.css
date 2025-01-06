@@ -1,0 +1,29 @@
+section {
+  background-image: url("/src/components/picture/bg-g.jpeg");
+  background-size: cover;
+}
+
+.title-section {
+  text-align: center;
+}
+
+.tourist-spot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+}
+
+.ph {
+  width: 100%;
+  
+}
+
+.gt {
+  width: 100%;
+  
+}
+
+.ep {
+  width: 100%;
+  
+}
