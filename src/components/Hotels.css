@@ -1,9 +1,30 @@
-h2 {
+.title-section-hotel {
   text-align: center;
+  font-size: 30px;
 }
 
 .hotel-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 150px;
+  grid-template-columns: repeat(3, 1fr); /* Ensure even spacing for 3 columns */
+  column-gap: 30px; /* Adjust column gap as needed */
+  justify-items: center; /* Center content horizontally */
+}
+
+.hotel {
+  width: 300px; /* Fixed container width */
+  height: 300px; /* Fixed container height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure no overflow of content */
+  border: 1px solid #ddd; /* Optional: Add a border for a clean look */
+  border-radius: 8px; /* Optional: Rounded corners for aesthetics */
+}
+
+.hotel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fill container proportionately */
+  border-radius: 8px; /* Match container's border radius */
 }

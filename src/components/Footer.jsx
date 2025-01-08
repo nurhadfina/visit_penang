@@ -18,10 +18,14 @@ const Footer = () => (
         </p>
       </div>
       <p>&copy; 2025 Visit Penang. All rights reserved.</p>
+      <h1>Contact Us:</h1>
       <ul>
-        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/penangglobal.tourism/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/penang.experience/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UCcirvBTjbnpkYLlzNkmyKEQ/feed" target="_blank">Youtube</a></li>
+        <li><a href="https://www.tiktok.com/@experiencepenang" target="_blank">TikTok</a></li>
       </ul>
+      <img class="penang-logo" src="src\components\picture\footer-logo.png"></img>
     </div>
   </footer>
 );

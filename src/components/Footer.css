@@ -1,8 +1,5 @@
 .footer-section {
-  height: 380px;
-}
-
-footer {
+  height: 800px;
   background-image: url("/src/components/picture/footer_bg.jpg");
   background-size: cover;
 }
@@ -13,7 +10,7 @@ footer {
   width: 800px;
 }
 
-.about-us {
+footer h1 {
   font-size: 30px;
   margin-left: 30px;
 }
@@ -21,3 +18,7 @@ footer {
 footer p {
   margin-left: 30px;
 }
+
+/*.penang-logo {
+  margin-left: 40px;
+}*/

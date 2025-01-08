@@ -3,15 +3,25 @@ import "./Hotels.css";
 
 const Hotels = () => (
   <section id="hotels" className="section">
-    <h2>Hotels</h2>
+    <h2 class="title-section-hotel">Hotels</h2>
     <div class="hotel-grid">
       <div className="hotel">
-        <img src="src\components\picture\hotel-1.jpeg" alt="Hotel A" />
-        <p>Hotel A: Luxury accommodation with ocean views.</p>
+        <div class="hotel-img">
+          <img src="src\components\picture\hotel-1.jpeg" alt="Hotel A" />
+        </div>
+        <h2>Angsana Teluk Bahang</h2>
       </div>
       <div className="hotel">
-        <img src="src\components\picture\hotel-2.jpeg" alt="Hotel B" />
-        <p>Hotel B: Affordable and convenient in the heart of Penang.</p>
+        <div class="hotel-img">
+          <img src="src\components\picture\hotel-2.jpeg" alt="Hotel B" />
+        </div>
+        <h2>Hard Rock Hotel</h2>
+        </div>
+      <div className="hotel">
+      <div class="hotel-img">
+        <img src="src\components\picture\hotel-3.jpg" alt="Hotel C" />
+      </div>
+        <h2>PARKROYAL Penang</h2>
       </div>
     </div>
   </section>
