@@ -1,8 +1,9 @@
 section {
   background-image: url("/src/components/picture/bg-g.jpeg");
   background-size: cover;
+  background-position: center;
   height: 400px;
-  min-height: 50vh;
+  min-height: 50vh; /* Makes sure it stretches with viewport height */
 }
 
 .title-section-food {
@@ -12,26 +13,28 @@ section {
 
 .food-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal spacing */
-  column-gap: 30px; /* Adjust spacing between columns */
-  justify-items: center; /* Center the content horizontally */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Uniform spacing between grid items */
+  justify-items: center;
 }
 
+
 .food-item {
-  width: 300px; /* Square width */
-  height: 300px; /* Square height */
+  width: 300px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Ensure no overflow of content */
-  border: 1px solid #ddd; /* Optional border for aesthetic */
-  border-radius: 8px; /* Optional rounded corners */
+  overflow: hidden; /* Ensures no overflowing content */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff; /* Optional: Adds a clean background */
 }
 
 .food-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures images fill the container proportionately */
-  border-radius: 8px; /* Match container's border radius */
+  object-fit: cover;
+  border-radius: 8px;
 }
