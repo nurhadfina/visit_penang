@@ -3,6 +3,7 @@
   justify-content: center; /* Center the image within the item */
   align-items: center; /* Vertically center the image */
   overflow: hidden; /* Ensures that any overflowing image content is hidden */
+
 }
 
 .food-item img {
@@ -24,3 +25,4 @@
   margin-left: auto;
   margin-right: auto;
 }
+  
