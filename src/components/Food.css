@@ -1,37 +1,26 @@
-section {
-  background-image: url("/src/components/picture/bg-g.jpeg");
-  background-size: cover;
-  height: 400px;
-  min-height: 50vh;
+.food-item {
+  display: flex;
+  justify-content: center; /* Center the image within the item */
+  align-items: center; /* Vertically center the image */
+  overflow: hidden; /* Ensures that any overflowing image content is hidden */
 }
 
-.title-section-food {
-  text-align: center;
-  font-size: 30px;
+.food-item img {
+  width: 100%; /* Makes the image fill the width of its container */
+  height: 200px; /* Fixed height to keep all images the same size */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-radius: 8px; /* Optional: rounds the corners of the images */
 }
 
 .food-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal spacing */
-  column-gap: 30px; /* Adjust spacing between columns */
-  justify-items: center; /* Center the content horizontally */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* Spacing between grid items */
+  padding: 20px; /* Padding around the grid */
 }
 
-.food-item {
-  width: 300px; /* Square width */
-  height: 300px; /* Square height */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Ensure no overflow of content */
-  border: 1px solid #ddd; /* Optional border for aesthetic */
-  border-radius: 8px; /* Optional rounded corners */
-}
-
-.food-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images fill the container proportionately */
-  border-radius: 8px; /* Match container's border radius */
+.item-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

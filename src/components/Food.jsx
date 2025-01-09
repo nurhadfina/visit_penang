@@ -7,21 +7,23 @@ const Food = () => (
     <div class="food-grid">
       <div className="food-item">
         <div>
-          <img class="laksa" src="src\components\picture\laksa.jpeg" alt="Laksa"/> 
+          <img class="item-pic" src="src\components\picture\laksa.jpeg" alt="Laksa"/> 
+          <h2>Laksa</h2>
         </div>
-        <h2>Laksa</h2>
       </div>
       <div className="food-item">
         <div>
-          <img class="ckt" src="src\components\picture\char-kuey-teow.jpeg" alt="Char Kway Teow" />
+          <img class="item-pic" src="src\components\picture\char-kuey-teow.jpeg" alt="Char Kway Teow" />
+          <h2>Char Kway Teow</h2>
+
         </div>
-        <h2>Char Kway Teow</h2>
       </div>
       <div className="food-item">
         <div>
-          <img class="pasembur" src="src\components\picture\pasembur.jpg" alt="Pasembur" />
+          <img class="item-pic" src="src\components\picture\pasembur.jpg" alt="Pasembur" />
+          <h2>Pasembur</h2>
+
         </div>
-        <h2>Pasembur</h2>
       </div>
     </div>
   </section>
