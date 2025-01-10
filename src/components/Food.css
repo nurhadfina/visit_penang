@@ -1,28 +1,50 @@
 .food-item {
   display: flex;
-  justify-content: center; /* Center the image within the item */
-  align-items: center; /* Vertically center the image */
-  overflow: hidden; /* Ensures that any overflowing image content is hidden */
-
+  flex-direction: column; /* Align children vertically */
+  justify-content: center; /* Center items within the container */
+  align-items: center; /* Center items horizontally */
+  overflow: hidden; /* Ensures that any overflowing content is hidden */
+  background-color: white; /* White container for the food items */
+  border: 1px solid #ddd; /* Thinner border with a subtle gray color */
+  border-radius: 50px; /* Slight rounding for a cleaner look */
+  width: 300px; /* Fixed width for each food item */
+  height: 350px; /* Fixed height for each food item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.15s, box-shadow 0.15s; /* Smooth hover animations */
 }
+
 
 .food-item img {
   width: 100%; /* Makes the image fill the width of its container */
-  height: 200px; /* Fixed height to keep all images the same size */
+  height: 100%; /* Fixed height to keep all images the same size */
   object-fit: cover; /* Ensures the image covers the container without distortion */
-  border-radius: 8px; /* Optional: rounds the corners of the images */
+  border-radius: 8px; /* Rounds the corners of the images */
+  padding: 0;
 }
 
 .food-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 20px; /* Spacing between grid items */
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Equal gap between items */
+  justify-content: space-between; /* Center the entire grid horizontally */
   padding: 20px; /* Padding around the grid */
 }
 
-.item-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.title-section-food {
+  font-size: 30px;
+  margin-top: 0;
+  color: black;
+  text-align: center; /* Center-align the title */
+  margin-bottom: 20px; /* Adds spacing below the title */
 }
-  
+
+.food-item h2 {
+  margin-top: 10px;
+  color: black;
+  text-align: center; /* Center-align the text */
+}
+
+.food-item:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}

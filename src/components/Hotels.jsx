@@ -9,19 +9,25 @@ const Hotels = () => (
         <div class="hotel-img">
           <img src="src\components\picture\hotel-1.jpeg" alt="Hotel A" />
         </div>
-        <h2>Angsana Teluk Bahang</h2>
+        <div>
+          <h2>Angsana Teluk Bahang</h2>
+        </div>
       </div>
       <div className="hotel">
         <div class="hotel-img">
           <img src="src\components\picture\hotel-2.jpeg" alt="Hotel B" />
         </div>
+        <div>
         <h2>Hard Rock Hotel</h2>
         </div>
-      <div className="hotel">
-      <div class="hotel-img">
-        <img src="src\components\picture\hotel-3.jpg" alt="Hotel C" />
       </div>
-        <h2>PARKROYAL Penang</h2>
+      <div className="hotel">
+        <div class="hotel-img">
+          <img src="src\components\picture\hotel-3.jpg" alt="Hotel C" />
+        </div>
+        <div>
+          <h2>PARKROYAL Penang</h2>
+        </div>
       </div>
     </div>
   </section>

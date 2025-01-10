@@ -1,12 +1,12 @@
 section {
-  background-image: url("/src/components/picture/bg-g.jpeg");
-  background-size: cover;
-  background-position: center;
+  background-color: rgb(213, 200, 175);
+  height: 500px;
 }
 
 .title-section-ts {
   text-align: center;
   font-size: 30px;
+  margin-top: 0;
 }
 
 .tourist-spot-grid {
@@ -16,8 +16,38 @@ section {
   justify-items: center;
 }
 
+.item-pic {
+  width: 300px; /* Consistent width for each picture container */
+  height: 250px; /* Consistent height for each picture container */
+  border-radius: 8px; /* Optional: round the image corners slightly */
+  overflow: hidden; /* Ensure the image does not overflow the container */
+  background-color: white; /* White background for the container */
+  padding: 10px; /* Add some padding inside the container */
+  box-sizing: border-box; /* Include padding in the total size */
+}
+
 .item-pic img {
-  width: 100%; /* Makes sure the image occupies the full width */
-  height: 250px; /* Set a fixed height for the images */
-  object-fit: cover; /* Ensures the image is cropped or resized proportionally */
+  width: 100%;
+  height: 100%; /* Ensures the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  border-radius: 8px; /* Matches the container’s rounded corners */
+}
+
+.item-name {
+  color: black;
+  text-align: center; /* Center-align the names */
+}
+
+.spot {
+  border: 2px solid white; /* Add a white border around the container */
+  border-radius: 50px;
+  padding: 15px; /* Add padding inside the spot container */
+  background-color: white; /* White background for the spot container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.spot:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.15s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }

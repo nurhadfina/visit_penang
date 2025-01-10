@@ -2,6 +2,12 @@ h2 {
   text-align: center;
 }
 
+.title-section-hotel {
+  font-size: 30px;
+  margin-top: 0;
+  color: black;
+}
+
 .hotel-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -9,8 +15,34 @@ h2 {
   justify-items: center;
 }
 
+@media (max-width: 768px) {
+  .hotel-grid {
+    column-gap: 20px; /* Reduce column gap on smaller screens */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
 .hotel-img img {
   width: 100%; /* Makes the image take up the full width of the container */
   height: 250px; /* Set a fixed height for the images */
   object-fit: cover; /* Ensures the image is cropped or resized proportionally */
+}
+
+
+.hotel:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.15s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.hotel {
+  border: 2px solid white; /* Add a white border around the container */
+  border-radius: 50px;
+  padding: 15px; /* Add padding inside the spot container */
+  background-color: white; /* White background for the spot container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.hotel h2{
+  color: black;
 }
