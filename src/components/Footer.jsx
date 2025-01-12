@@ -25,7 +25,7 @@ const Footer = () => (
         <li><a href="https://www.youtube.com/channel/UCcirvBTjbnpkYLlzNkmyKEQ/feed" target="_blank">Youtube</a></li>
         <li><a href="https://www.tiktok.com/@experiencepenang" target="_blank">TikTok</a></li>
       </ul>
-      <img class="penang-logo" src="\picture\footer-logo.png"></img>
+      <img class="penang-logo" src="/picture/footer-logo.png"></img>
     </div>
   </footer>
 );
