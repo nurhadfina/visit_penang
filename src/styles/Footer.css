@@ -1,6 +1,6 @@
 .footer-section {
   height: 900px;
-  background-image: url("/src/components/picture/footer_bg.jpg");
+  background-image: url("/picture/footer_bg.jpg");
   background-size: cover;
   background-position: bottom;
 
