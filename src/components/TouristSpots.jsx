@@ -1,5 +1,5 @@
 import React from "react";
-import "./TouristSpots.css";
+import "../styles/TouristSpots.css";
 
 const TouristSpots = () => {
   // Function to handle picture interaction
@@ -17,7 +17,7 @@ const TouristSpots = () => {
           <div className="item-pic" onClick={() => handlePictureClick("Penang Hill")}>
             <img
               className="ph"
-              src="src/components/picture/penang-hill.jpeg"
+              src="/picture/penang-hill.jpeg"
               alt="Penang Hill"
             />
           </div>
@@ -29,7 +29,7 @@ const TouristSpots = () => {
           <div className="item-pic" onClick={() => handlePictureClick("George Town")}>
             <img
               className="gt"
-              src="src/components/picture/george-town.jpg"
+              src="/picture/george-town.jpg"
               alt="George Town"
             />
           </div>
@@ -41,7 +41,7 @@ const TouristSpots = () => {
           <div className="item-pic" onClick={() => handlePictureClick("ESCAPE Penang")}>
             <img
               className="ep"
-              src="src/components/picture/escape-penang.jpg"
+              src="/picture/escape-penang.jpg"
               alt="ESCAPE Penang"
             />
           </div>
